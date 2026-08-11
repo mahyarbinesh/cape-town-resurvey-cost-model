@@ -6,6 +6,10 @@ A PostGIS-based cadastral resurvey cost model developed as part of the master's 
 
 The study developed a spatial model for estimating the relative difficulty and cost of cadastral resurveys in Cape Town. The model integrates cadastral geometry, survey age, terrain and vegetation characteristics, and accessibility to Town Survey Marks (TSMs).
 
+## Thesis
+
+The full master's thesis is available in the `thesis/` directory.
+
 ## Workflow
 
 The project combined relational spatial processing with graph-based representation:
