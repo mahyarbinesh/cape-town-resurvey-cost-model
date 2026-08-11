@@ -4,7 +4,7 @@ import csv
 
 # --- Configuration ---
 
-large_data_file = "Thesis\\Data\\SG Databse\\SGNO_Parcel_WC.txt"
+large_data_file = "SGNO_Parcel_WC.txt"
 
 allotment_names_file = 'CT_Allotments.csv'
 
