@@ -37,6 +37,13 @@ The project combined relational spatial processing with graph-based representati
 ├── README.md
 ├── awk/
 │   └── filter_data.awk
+├── bash/
+│   └── 01_run_slope_chunks.sh
+├── postgis/
+│   ├── 01_parcel_cleaning.sql
+│   ├── 02_simplification_vertex_count.sql
+│   ├── 03_beacon_generation.sql
+│   └── 04_block_generation_and_assignment.sql
 ├── python/
 │   ├── 01_add_region_names.py
 │   ├── 02_prepare_allotment_codes.py
