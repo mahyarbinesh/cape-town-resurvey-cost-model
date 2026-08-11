@@ -44,8 +44,7 @@ def convert_esri_to_geojson(esri_path, geojson_path):
 # === CONFIGURATION ===
 
 input_folder = Path(
-    "C:/Users/mahya/OneDrive - TUM/4. Thesis/Data/building/"
-    "building_low_detail_chunks"
+        "building_low_detail_chunks"
 )
 
 output_folder = input_folder / "converted_geojson"
