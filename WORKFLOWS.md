@@ -195,7 +195,7 @@ Slope and canopy classes were then combined using the topography–vegetation di
 
 ## 8. Survey Age and SG/SR Integration
 
-Survey age was incorporated using information extracted from the cadastral and Survey Record datasets.
+Survey age was incorporated using information extracted from the Surveyor-General and Survey Record numbers.
 
 ### Workflow
 
