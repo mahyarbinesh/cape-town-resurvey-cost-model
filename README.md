@@ -8,11 +8,13 @@ The study developed a spatial model for estimating the relative difficulty and c
 
 ## Thesis
 
-The full master's thesis is available in the `thesis/` directory.
+A concise summary of the master's thesis, including the research objectives, data, methodology, modelling approach and main results, is available in the `thesis/` directory.
+
+The full master's thesis is also provided there for detailed reference.
 
 ## Workflow
 
-The project combined relational spatial processing with graph-based representation:
+The project combined large-scale geospatial data processing, relational spatial modelling and graph-based representation:
 
 1. **Cadastral data preparation**
    - Cleaning and validation of parcel geometries
@@ -23,22 +25,33 @@ The project combined relational spatial processing with graph-based representati
    - AWK was used to filter the large Surveyor-General parcel dataset.
    - Python/Pandas was used for subsequent enrichment and joining of cadastral information.
    - Allotment codes and names, SG years, and Survey Record information were incorporated into the processed dataset.
-
+  
 3. **PostGIS spatial modelling**
    - Parcel geometry and spatial attributes were processed in PostgreSQL/PostGIS.
-   - Cadastral blocks were generated from parcel geometries.
+   - Geometric characteristics were derived and cadastral blocks were generated from parcel geometries.
    - Terrain, vegetation, survey-age and TSM accessibility factors were incorporated into the cost model.
 
 4. **Neo4j graph representation**
-   - Parcels, blocks, allotments, beacons and Town Survey Marks were represented as graph entities.
-   - Relationships were created between these entities to represent cadastral structure and spatial/control relationships.
+   - Parcels, blocks, allotments, beacons and Town Survey Marks were represented as nodes.
+   - Relationships were created to represent parcel–beacon connectivity, parcel–block and parcel–allotment relationships, and parcel–TSM spatial/control relationships.
    - Cypher queries were used to inspect and validate the resulting graph.
+     
+5. **Processing automation**
+   - Bash and PowerShell scripts were used to automate selected processing tasks.
+  
+## Workflow Documentation
+
+A more detailed description of the processing workflows, including the sequence of data preparation, spatial processing and graph construction steps, is provided in `workflows.md`.
 
 ## Repository Structure
 
 ```text
 .
 ├── README.md
+├── workflows.md
+├── thesis/
+│   ├── Thesis_Summary_16-08-2026.pdf
+│   └── Master's Thesis_Cape_Town_Cadastral_Resurvey_Cost_Model.pdf
 ├── awk/
 │   └── filter_data.awk
 ├── bash/
