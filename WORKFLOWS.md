@@ -165,7 +165,6 @@ The final model used parcel-level mean slope in degrees.
 
 **Example workflow:**
 - `bash/01_run_slope_chunks.sh`
-- PostGIS raster processing examples documented in the thesis workflow
 
 ---
 
